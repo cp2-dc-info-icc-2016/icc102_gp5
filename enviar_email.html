@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<link rel="stylesheet" type="text/css" href="style_css.css">
+
+<style>
+#in_noticia{
+	width: 30px;
+	height:20px;
+}
+</style>
+
+<html>
+	<head>
+		<title> Envie-nos uma notícia</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+		<h1 id ="titulo1"> Transferência de informações </h1>
+		<p class="coisas_grandes_centrais">Este portal é de suma importância para o avanço dessa central de informações. <br>
+			Abaixo preencha o formulário e nos envie sua notícia e ou relato. <br>
+		 	Desde já agradecemos.</p>
+
+		<table>
+
+			<tr>
+				<td>Nome</td>
+				<td> <input type="text" id="in_nome"> </td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td> <input type="text" id="in_cpf"> </td>
+			</tr>
+			<tr>
+				<td>Data de Nascimento</td>
+				<td> <input type="text" id="in_datNasc"> </td>
+			</tr>
+			<tr>
+				<td>Notícia ou relato</td>
+				<td id="in_notícia"> <input type="text"></td>
+			</tr>
+
+		</table>
+
+		<input type="button" value="Carrega Funcionario 1" onclick="carregaFuncionario(funcionario_1)">
+		<input type="button" value="Carrega Funcionario 2" onclick="carregaFuncionario(funcionario_2)">
+
+	</body>
+</html>

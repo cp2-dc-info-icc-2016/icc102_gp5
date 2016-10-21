@@ -37,8 +37,32 @@ body{
   opacity: 0.7;
 }
 
-a {
+.links_pretos {
   text-decoration: none;
   color: black;
   font-size: 20px;
+}
+
+ul {
+  list-style-type:disc;
+  font-size: 15px;
+  text-align: left;
+  background-color: #af1010;
+  color: white;
+  font-family: 'Meiryo UI';
+  padding: 20px;
+}
+
+ul li {
+  margin: 5px;
+}
+
+#link {
+  color: white;
+  text-decoration: none;
+}
+
+.coisas_grandes_centrais{
+  font-size: 20px;
+  text-align: center;
 }
