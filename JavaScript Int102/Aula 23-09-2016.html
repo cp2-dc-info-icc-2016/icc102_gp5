@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<script>
+funcionario_1 = {
+"nome": "Laura Coelho",
+"cpf": "515.639.586-43",
+"datNasc": "28/06/2001",
+"genero": "F",
+"cargo": "Psicóloga",
+"salario":  1738.29,
+"aposentado": "False"
+}
+funcionario_2 = {
+"nome": "Karina Twister",
+"cpf": "002.098.187-27",
+"datNasc": "23/04/2000",
+"genero": "F",
+"cargo": "Jogadora de Twister",
+"salario": "9000.30",
+"aposentado": "True"
+}
+
+function carregaFuncionario(func){
+  document.getElementById("in_nome").value= func.nome;
+  document.getElementById("in_cpf").value= func.cpf;
+  document.getElementById("in_datNasc").value= func.datNasc;
+  document.getElementById("in_genero").value= func.genero;
+  document.getElementById("in_cargo").value= func.cargo;
+  document.getElementById("in_salario").value= func.salario;
+  document.getElementById("in_aposentado").value= func.aposentado;
+}
+
+</script>
+
+<style>
+table, td, tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+  background-color: #ffc976;
+}
+</style>
+<html>
+  <head>
+    <title>Cadastro de Funcionários</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <h1> Cadastro de Funcionário</h1>
+    <input type="button" value="Carregar Funcionario 1" onclick="carregaFuncionario(funcionario_1)">
+    <input type="button" value="Carregar Funcionario 2" onclick="carregaFuncionario(funcionario_2)">
+    <table>
+      <tr>
+        <td>Nome</td>
+        <td><input type="text" id="in_nome"></td>
+      </tr>
+      <tr>
+        <td>CPF</td>
+        <td><input type="text" id="in_cpf"></td>
+      </tr>
+        <td>Data de Nascimento</td>
+        <td><input type="text" id="in_datNasc"></td>
+      </tr>
+        <td>Gênero</td>
+        <td><input type="text" id="in_genero"></td>
+      </tr>
+        <td>Cargo</td>
+        <td><input type="text" id="in_cargo"></td>
+      </tr>
+        <td>Salário</td>
+        <td><input type="text" id="in_salario"></td>
+      </tr>
+      <tr>
+        <td>Aposentado</td>
+        <td><input type="text" id="in_aposentado"></td>
+      </tr>
+    </table>
+  </body>
+</html>

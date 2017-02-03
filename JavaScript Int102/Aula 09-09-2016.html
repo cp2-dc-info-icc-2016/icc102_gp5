@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<style>
+  #lampada {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+  }
+</style>
+
+<script>
+
+function Muda() {
+  var p = document.getElementById("Stronger");
+  p.innerHTML = "Eu Amo Glee <3";
+}
+function acende() {
+  var lampada = document.getElementById("lampada");
+
+  if (lampada.style.backgroundColor == "black") {
+  lampada.style.backgroundColor = "yellow";
+ } else{
+   lampada.style.backgroundColor = "black";
+  }
+}
+
+</script>
+
+<html>
+  <head>
+    <title>Minha Página</title>
+  </head>
+
+  <body>
+    <div id="lampada"></div>
+    <h1>Oi</h1>
+    <input type="button" value="Acende/Apaga" onclick="acende()">
+    <input type="button" value="Muda Parágrafo" onclick="Muda()">
+    <p id= "Stronger"> Isso é Glee </p>
+  </body>
+
+</html>
